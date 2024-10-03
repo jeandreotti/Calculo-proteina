@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Calculo Proteína</title>
 </head>
+
 <body>
     <label for="peso">Peso total em Kg:</labe>
     <input type="text" id="peso" name="pesoemkg"> 
@@ -24,24 +26,7 @@
 <label id="totalVP">Valor da gr da proteína:</label>
 <br>
 
-
-
-<script>
-    
-    function calcular(){
-
-var peso1 = window.document.getElementById('peso').value;
-var valor1 = window.document.getElementById('valor').value;
-var proteina1 = window.document.getElementById('proteina').value;
-
-var valorPeso = Number((0.1/ peso1) * valor1)
-var valorproteina = Number(valorPeso/proteina1)
-
-document.getElementById('totalVP').innerHTML += valorPeso;
-document.getElementById('totalProt').innerHTML += valorproteina;
-}
-
-</script>
+<script src="javascript.js"></script>
 
 </body>
 </html>
