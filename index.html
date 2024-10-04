@@ -3,28 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     
     <title>Calculo Proteína</title>
 </head>
 
 <body>
-    <label for="peso">Peso total em Kg:</labe>
-    <input type="text" id="peso" name="pesoemkg"> 
-<br>
-    <label for="valor">Valor total:</labe>
-    <input type="text" id="valor" name="valorTotal"> 
-<br>
-    <label for="proteina">Qtde proteína a cada 100gr:</labe>
-    <input type="text" id="proteina" name="qtdeproteina"> 
-<br>
+    
+ <main>
+    <h1>Cálculo quantidade de proteína</h1>
+    
+    <div class="painel">
+     
+         <fieldset>
+             <legend>Insira os Dados</legend>
+     
+                 <label for="peso">Peso total em Kg:</label> <br>
+                     <input type="text" id="peso" name="peso" required  placeholder="peso da porção">
+                 <br>
+                 <label for="valor">Valor total:</label> <br>
+                     <input type="text" id="valor" name="valor" required placeholder="valor da porção">
+                 <br>
+                 <label for="proteina">Qtde proteína a cada 100gr:</label> <br>
+                 <input type="text" id="proteina" name="proteina" required>
+                 
+                     <!-- <div class="select">
+                     <select  id="proteina" name="proteina">
+                        <option value="1">1gr</option>
+                        <option>2gr</option>
+                        <option>3gr</option>
+                        <option>4gr</option>
+                        <option>5gr</option>
+                        <option>6gr</option>
+                        <option>7gr</option>
+                        <option>8gr</option>
+                        <option>9gr</option>
+                        <option>10gr</option>
+                        <option>11gr</option>
+                        <option>12gr</option>
+                        <option>13gr</option>
+                        <option>14gr</option>
+                        <option>15gr</option>
+                        <option>16gr</option>
+                        <option>17gr</option>
+                        <option>18gr</option>
+                        <option>19gr</option>
+                        <option>20gr</option>
+                        <option>21gr</option>
+                        <option>22gr</option>
+                        <option>24gr</option>
+                        <option>25gr</option>
+                        <option>26gr</option>
+                        <option>27gr</option>
+                        <option>28gr</option>
+                        <option>29gr</option>
+                        <option>30gr</option>
+                        <option>31gr</option>
+                        <option>32gr</option>
+                        <option>33gr</option>
+                        <option>34gr</option>
+                        <option>35gr</option>
+                        <option>36gr</option>
+                        <option>37gr</option>
+                        <option>38gr</option>
+                        <option>39gr</option>
+                        <option>40gr</option>
+                     </select>
+                 </div> -->
+                <!-- <input type="text" id="proteina"required> <br> -->
+                  <!-- funciona da mesma forma
+                 <label>
+                         Qtde proteína a cada 100gr:
+                         <br><input type="text" id="proteina"required>
+                 </label><br> -->
+                 <input class="botaoCalc" type="button" value="Calcular" onclick="calcular()">
+         </fieldset>
+     
+         <!-- funciona da mesma forma -->
+     
+     
+         <fieldset class="fresultado">
+         <legend>Resultado</legend>
+             <!-- <button type="calcular">Calcula1</button> -->
+     
+         <label>Custo da proteína a cada 100gr da porção: </label><br>
+         <label id="totalVP"></label>
+         <br>
+         
+         <label>Valor da gr da proteína:</label><br>
+         <label id="totalProt"></label><br>
+         </fieldset>
+     </div>
+ </main>
 
-<input type="button" value="Calcular" onclick="calcular()">
-<br>
-<br>
-<label id="totalVP">Custo da proteina a cada 100gr da porção: </label>
-<br>
-<label id="totalProt">Valor da gr da proteína:</label>
-<br>
 
 <script src="javascript.js"></script>
 
