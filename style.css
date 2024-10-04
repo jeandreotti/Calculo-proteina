@@ -4,7 +4,10 @@
 *{
     margin: 0px;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+
 
 main{
     height: 100vh;
@@ -13,10 +16,23 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: black url(./calculadora.jpg) ;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.corpo {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.589);
+    padding-top: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
 }
 
 .painel{
     width: 250px;
+    margin: auto;
     /* position: absolute;
     top: 50%;
     left: 50%;
@@ -24,9 +40,10 @@ main{
 }
 
 h1{
-    font-size: 1.4em;
-    width: 60%;
+    font-size: 1.2em;
+    width: 100%;
     text-align: center;
+    margin: auto;
 }
 
 legend{
@@ -59,7 +76,9 @@ select:hover{
 option{
     text-align: center;
 }
-
+label{
+    
+}
 input{
     margin-bottom: 5px;
 }
@@ -70,13 +89,25 @@ input:hover{
 
 .botaoCalc{
     position: relative;
-    left: 40%;
+    left: 30%;
+    padding: 5px;
+    border-radius: 5px;
+    
+    
 }
 
 
-
+.label1{
+    text-align: center;
+    color: rgb(252, 246, 246);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0842);
+    font-weight: bold;
+}
 
 #totalProt , #totalVP {
+    position: relative;
+    left: 10%;
+    font-size: 1.5em;
     color: red;
     font-weight: bolder;
 }
