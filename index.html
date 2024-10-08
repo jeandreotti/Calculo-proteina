@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="all">
+    
     
     <title>Calculo Proteína</title>
 </head>
@@ -19,16 +20,44 @@
              <fieldset>
                  <legend>Insira os Dados</legend><br>
         
-                     <label for="peso">Peso total em Kg:</label> <br>
+                     <label for="peso">Peso em Kg:</label> <br>
                          <input type="text" id="peso" name="peso" required  placeholder="peso da porção">
                      <br><br>
-                     <label for="valor">Valor total:</label> <br>
+
+                     <label for="valor">Valor:</label> <br>
                          <input type="text" id="valor" name="valor" required placeholder="valor da porção">
                      <br><br>
-                     <label for="proteina">Qtde proteína a cada 100gr:</label> <br>
-                     <input type="text" id="proteina" name="proteina" required><br><br>
+
+                     <label for="proteina">Qtde proteína (100gr):</label> <br>
+                     <input type="number" id="proteina" name="proteina" min="1" max="40" required><br><br>
         
-                         <!-- <div class="select">
+                     <input class="botaoCalc" type="button" value="Calcular" onclick="calcular()">
+             </fieldset>
+        
+             <!-- funciona da mesma forma -->
+        
+        
+             <fieldset class="fresultado">
+                    <legend>Resultado</legend>
+                        <!-- <button type="calcular">Calcula1</button> -->
+                
+                    <label class="label1">Custo <span id="mostrarProt" ></span> proteína: </label><br>
+                    <label id="totalVP">R$ </label>
+                    <br><br>
+                
+                    <label class="label1">Valor grama da proteína:</label><br>
+                    <label id="totalProt">R$ </label><br><br>
+             </fieldset>
+         </div>
+    </div>
+ </main>
+
+
+<script src="javascript.js"></script>
+
+</body>
+</html>
+                    <!-- <div class="select">
                          <select  id="proteina" name="proteina">
                             <option value="1">1gr</option>
                             <option>2gr</option>
@@ -77,29 +106,3 @@
                              Qtde proteína a cada 100gr:
                              <br><input type="text" id="proteina"required>
                      </label><br> -->
-                     <input class="botaoCalc" type="button" value="Calcular" onclick="calcular()">
-             </fieldset>
-        
-             <!-- funciona da mesma forma -->
-        
-        
-             <fieldset class="fresultado">
-             <legend>Resultado</legend>
-                 <!-- <button type="calcular">Calcula1</button> -->
-        
-             <label class="label1">Custo da proteína a cada 100gr da porção: </label><br>
-             <label id="totalVP">R$ </label>
-             <br><br>
-        
-             <label class="label1">Valor da gr da proteína:</label><br>
-             <label id="totalProt">R$ </label><br><br>
-             </fieldset>
-         </div>
-    </div>
- </main>
-
-
-<script src="javascript.js"></script>
-
-</body>
-</html>
